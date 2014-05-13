@@ -111,6 +111,7 @@ body {
   height: 100%;
   width: 100%;
   position: relative;
+    color: #fff;
   background: url(../img/bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
