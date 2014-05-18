@@ -76,7 +76,20 @@
   <!-- Default panel contents -->
         <div class="panel-heading"><center>Directorio Universitario</center></div>
           <div class="panel-body">Aqui podras encontrar informacionde contacto de Profesores de cada facultad, solo tienes que seleccionar el nombre y aparecera la informacion (Todos los correos son @unbosque.edu.co).</div>
-  <!-- Table -->
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                                Seleccione Facultad <span class="caret"></span>
+                              </button>
+                              <ul class="dropdown-menu" role="menu">
+                               <li><a data-toggle="collapse" data-target="#sec1">Administracion de Empresas</a></li>
+                                <li><a data-toggle="collapse" data-target="#sec2">Ingenieria</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                              </ul>
+                                </div>
+          <div id="sec1" class="collapse out">
+  <!-- Table 1 -->
           <table class="table">
               <thead>
                   <tr>
@@ -86,8 +99,7 @@
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td><center>1</center></td>
+                  <td><center>1</center></td>
                       <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo">Humberto Alejandro Rosales</button></center>
 
 <div id="demo" class="collapse out"><center><p>Decano</p>
@@ -129,8 +141,46 @@
                       <td><center>Admon. de Empresas</center></td>
                       
                   </tr>
+                      
               </tbody>
+                   
             </table>
+              </div>
+    
+    <div id="sec2" class="collapse out">
+         <!-- Table 2 -->
+         <table class="table">
+              <thead>
+                  <tr>
+                      <th><center>#</center></th>
+                      <th><center>Nombre y Apellido</center></th>
+                      <th><center>Facultad</center></th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <td><center>1</center></td>
+                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#i1">Ing. Mario Omar Opazo </button></center>
+
+                    <div id="i1" class="collapse out"><center><p>Decano</p>
+                    <p>Extensión:  1385</p>
+                    </div>
+                                          <td><center>Ingenieria</center></td>
+                                          
+                                      </tr>
+                                       <tr>
+                                          <td><center>2</center></td>
+                                          <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo1">Natalia Nivia</button></center>
+                    
+                    <div id="demo1" class="collapse out"><center><p>Secretaria Decanatura</p>
+                    <p>Extensión:  1147</p>
+                        </center></div>
+                      <td><center>Ingenieria</center></td>
+                      
+                  </tr>
+            </tbody>
+                   
+            </table>
+        </div>
 </div>
     
     <!-- /Services -->
