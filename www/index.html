@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
+    <link rel="stylesheet" href="css/carousel.css">
+<link rel="stylesheet" href="css/carousel-style.css">
      <!-- Añadir Favicon -->
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <meta charset="utf-8">
@@ -62,7 +64,7 @@
     <!-- Intro -->
     <div id="about" class="intro">
         <div class="container">
-            <div class="row">
+            <div class="row">    
                 <div class="col-md-6 col-md-offset-3 text-center">
                     <h4>Esta es una aplicacion para la ayuda de nuevos estudiantes de la Universidad El Bosque</h4>
                     <p class="lead">Puede visitar la pagina principal de nuestra <a target="_blank" href="http://Uelbosque.edu.co/">Universidad</a>.</p>
@@ -199,70 +201,49 @@
     <div id="portfolio" class="portfolio">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 text-center">
-                    <h2>Sitios de Interes</h2>
-                    <hr>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/cueva.JPG">
-                        </a>
-                        <h4>La Cueva (Bloque H)</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/canchas.JPG">
-                        </a>
-                        <h4>Canchas</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 col-md-offset-2 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/gym.JPG">
-                        </a>
-                        <h4>Gimnasio</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/Biblioteca.JPG">
-                        </a>
-                        <h4>Biblioteca</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/terra1.JPG">
-                        </a>
-                        <h4>Terraza P1</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/terra2.JPG">
-                        </a>
-                        <h4>Terraza P2</h4>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="portfolio-item">
-                        <a href="javascript:void(1)">
-                            <img class="img-portfolio img-responsive" src="img/obser.JPG">
-                        </a>
-                        <h4>Observatorio</h4>
-                    </div>
-                </div>
+                    <center><h2>Sitios de Interes</h2></center>
+                  <!-- the viewport -->
+<div class="m-carousel m-fluid m-carousel-photos">
+  <!-- the slider -->
+  <div class="m-carousel-inner">
+    <!-- the items -->
+    <div class="m-item m-active">
+      <img src="img/cueva.JPG">
+        <p class="m-caption">La Cueva (Bloque H)</p>
+    </div>
+    <div class="m-item">
+      <img src="img/canchas.JPG">
+         <p class="m-caption">Canchas</p>
+    </div>
+      <div class="m-item">
+      <img src="img/Biblioteca.JPG">
+         <p class="m-caption">Biblioteca</p>
+    </div>
+      <div class="m-item">
+      <img src="img/gym.JPG">
+         <p class="m-caption">Gimnasio</p>
+    </div>
+      
+      <div class="m-item">
+      <img src="img/terra2.JPG">
+         <p class="m-caption">Terraza Piso 2 (Bloque M)</p>
+    </div>
+      <div class="m-item">
+      <img src="img/obser.JPG">
+         <p class="m-caption">Observatorio (Bloque M)</p>
+    </div>
+  </div>
+    <!-- the controls -->
+  <div class="m-carousel-controls m-carousel-bulleted">
+    <a href="#" data-slide="1" class="m-active">1</a>
+    <a href="#" data-slide="2">2</a>
+    <a href="#" data-slide="3">3</a>
+    <a href="#" data-slide="4">4</a>
+    <a href="#" data-slide="5">5</a>
+    <a href="#" data-slide="6">6</a>
+    <a href="#" data-slide="7">7</a>
+  </div>
+</div>
             </div>
         </div>
     </div>
@@ -308,7 +289,7 @@
                          <center><p><b>Fernando Pinilla</b></p>
                     <p>Twitter: <a href="http://twitter.com/djfercho196" target="_blank"><b>@DjFercho196</b></a>
                          <center><p><b>Jose Mieles</b></p>
-                    <p><a href="http://twitter.com/jesushenriquezF" target="_blank"><b></b></a>
+                    <p>Twitter: <a href="http://twitter.com/Josemieles2" target="_blank"><b>@JesoMieles2</b></a>
         </div></p>
                     </center>
                     </div></center>
@@ -340,6 +321,11 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/carousel.js"></script>
+        
+        
+        
+        <script>$('.m-carousel').carousel()</script>
 
     <!-- Custom JavaScript for the Side Menu and Smooth Scrolling -->
     <script>
@@ -354,6 +340,7 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
     </script>
+        
     <script>
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
