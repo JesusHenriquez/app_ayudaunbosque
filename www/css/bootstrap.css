@@ -2033,18 +2033,18 @@ fieldset[disabled] .btn {
   opacity: .65;
 }
 .btn-default {
-  color: #333;
-  background-color: #fff;
-  border-color: #ccc;
+  color: white;
+  background-color: rgba(0,0,0,0);
+  border-color: orange;
 }
 .btn-default:hover,
 .btn-default:focus,
 .btn-default:active,
 .btn-default.active,
 .open .dropdown-toggle.btn-default {
-  color: #333;
-  background-color: #ebebeb;
-  border-color: #adadad;
+  color: #000;
+  background-color: orange;
+  border-color: orange;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2077,6 +2077,7 @@ fieldset[disabled] .btn-default.active {
     color: #fff;
     background-color: olivedrab;
     border-color: orange;
+    padd: 10px;
     /*
     color: #fff;
     background-color: #428bca;
@@ -3005,7 +3006,7 @@ input[type="button"].btn-block {
 }
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 0;
   z-index: 1000;
   display: none;
@@ -3129,6 +3130,7 @@ input[type="button"].btn-block {
   position: relative;
   display: inline-block;
   vertical-align: middle;
+  padding-bottom: 10px;
 }
 .btn-group > .btn,
 .btn-group-vertical > .btn {
@@ -4623,7 +4625,7 @@ a.thumbnail.active {
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid;
 }
 .list-group-item:first-child {
   border-top-left-radius: 4px;
@@ -4928,7 +4930,7 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 14px;
   color: inherit;
 }
 .panel-title > a {
@@ -4943,6 +4945,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-group {
   margin-bottom: 20px;
+    padding-top: 10px;
 }
 .panel-group .panel {
   margin-bottom: 0;
@@ -4957,6 +4960,7 @@ a.list-group-item-danger.active:focus {
 }
 .panel-group .panel-heading + .panel-collapse .panel-body {
   border-top: 1px solid #ddd;
+  color: green;
 }
 .panel-group .panel-footer {
   border-top: 0;
@@ -4965,11 +4969,11 @@ a.list-group-item-danger.active:focus {
   border-bottom: 1px solid #ddd;
 }
 .panel-default {
-  border-color: #ddd;
+  border-color: orange;
 }
 .panel-default > .panel-heading {
   color: #333;
-  background-color: #f5f5f5;
+  background-color: orange;
   border-color: #ddd;
 }
 .panel-default > .panel-heading + .panel-collapse .panel-body {

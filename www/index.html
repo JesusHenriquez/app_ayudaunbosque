@@ -2,8 +2,9 @@
 <html lang="es">
 
 <head>
+    <!-- Añadir Carousel -->
     <link rel="stylesheet" href="css/carousel.css">
-<link rel="stylesheet" href="css/carousel-style.css">
+    <link rel="stylesheet" href="css/carousel-style.css">
      <!-- Añadir Favicon -->
     <link rel="icon" type="image/png" href="/img/favicon.png" />
     <meta charset="utf-8">
@@ -55,7 +56,7 @@
             <h2>Ayuda Bosque</h2>
             <h4>Guiando a nuestros Usuarios,
                 de la Universidad El Bosque</h4>
-            <a href="#about" class="btn btn-default btn-sm">Enterate de más</a>
+            <a href="#about" class="btn btn-default btn-sm"><b>Enterate de más</b></a>
         </div>
     </div>
     <!-- /Full Page Image Header Area -->
@@ -80,106 +81,116 @@
         <div class="panel-heading"><center>Directorio Universitario</center></div>
           <div class="panel-body">Aqui podras encontrar informacionde contacto de Profesores de cada facultad, solo tienes que seleccionar el nombre y aparecera la informacion (Todos los correos son @unbosque.edu.co).</div>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown">
+                              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
                                 Seleccione Facultad <span class="caret"></span>
                               </button>
                               <ul class="dropdown-menu" role="menu">
-                               <li><a data-toggle="collapse" data-target="#sec1">Administracion de Empresas</a></li>
-                                <li><a data-toggle="collapse" data-target="#sec2">Ingenieria</a></li>
+                               <li><a data-toggle="collapse" data-parent="#menu" data-target="#sec1">Ingenieria</a></li>
+                                <li><a data-toggle="collapse" data-parent="#menu" data-target="#sec2">Ingenieria de Sistemas</a></li>
                               </ul>
                                 </div>
           <div id="sec1" class="collapse out">
-  <!-- Table 1 -->
-          <table class="table">
-              <thead>
-                  <tr>
-                      <th><center>#</center></th>
-                      <th><center>Nombre y Apellido</center></th>
-                      <th><center>Facultad</center></th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <td><center>1</center></td>
-                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo">Humberto Alejandro Rosales</button></center>
+  <!-- Table 1 y acordion -->
+         <ul class="list-group">
+    <li class="list-group-item"><center><b>Ingenieria</b></center></li>
+  </ul>
+              <p>Edificio Fundadores, tercer piso - Av. Cra. 9 No. 131 A - 02</p>
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" data-target="#decanoi">
+          <b>Decano</b>
+        </a>
+      </h4>
+    </div>
+    <div id="decanoi" class="panel-collapse collapse out">
+      <div class="panel-body">
+       <p>Ing. Mario Omar Opazo Gutiérrez</p>
+        <p>Extensión:  1385</p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" data-target="#secrei">
+          <b>Secretaria Decanatura</b>
+        </a>
+      </h4>
+    </div>
+    <div id="secrei" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Natalia Nivia</p>
+        <p>Extensión:  1147</p>
+      </div>
+    </div>
+  </div>
+</div>
+              
 
-<div id="demo" class="collapse out"><center><p>Decano</p>
-<p>Extensión:  1365</p>
-<p>rosaleshumberto@</p></center></div>
-                      <td><center>Admon. de Empresas</center></td>
-                      
-                  </tr>
-                   <tr>
-                      <td><center>2</center></td>
-                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo1">María Mercedes Bustos</button></center>
-
-<div id="demo1" class="collapse out"><center><p> Secretaria Decanatura</p>
-<p>Extensión:  1365</p>
-    <p>Teléfono directo:  6489021</p>
-<p>decanatura.administracion@</p></center></div>
-                      <td><center>Admon. de Empresas</center></td>
-                      
-                  </tr>
-                  
-                  <tr>
-                      <td><center>3</center></td>
-                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo2">Helena Pachón Vargas</button></center>
-
-<div id="demo2" class="collapse out"><center><p>Secretaria Académica</p>
-<p>Extensión:  1363/1107</p>
-<p>pachonhelena@</p></center></div>
-                      <td><center>Admon. de Empresas</center></td>
-                      
-                  </tr>
-                  <tr>
-                      <td><center>4</center></td>
-                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#demo3">Johana Nieto</button></center>
-
-<div id="demo3" class="collapse out"><center><p>Secretaria Secretaría Académica</p>
-<p>Extensión:  1363</p>
-    <p>Teléfono directo:  2743484</p>
-<p>secretaria.administracion@</p></center></div>
-                      <td><center>Admon. de Empresas</center></td>
-                      
-                  </tr>
-                      
-              </tbody>
-                   
-            </table>
               </div>
     
     <div id="sec2" class="collapse out">
          <!-- Table 2 -->
-         <table class="table">
-              <thead>
-                  <tr>
-                      <th><center>#</center></th>
-                      <th><center>Nombre y Apellido</center></th>
-                      <th><center>Facultad</center></th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <td><center>1</center></td>
-                      <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#i1">Ing. Mario Omar Opazo </button></center>
-
-                    <div id="i1" class="collapse out"><center><p>Decano</p>
-                    <p>Extensión:  1385</p>
-                    </div>
-                                          <td><center>Ingenieria</center></td>
-                                          
-                                      </tr>
-                                       <tr>
-                                          <td><center>2</center></td>
-                                          <td><center><button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#i2">Natalia Nivia</button></center>
-                    
-                    <div id="i2" class="collapse out"><center><p>Secretaria Decanatura</p>
-                    <p>Extensión:  1147</p>
-                        </center></div>
-                      <td><center>Ingenieria</center></td>
-                      
-                  </tr>
-            </tbody>
-                   
-            </table>
+         <ul class="list-group">
+    <li class="list-group-item"><center><b>Ingenieria de Sistemas</b></center></li>
+  </ul>
+              <p>Encargado de la formación en esta área de la ingeniería, velando por tener los mayores estándares de calidad en los procesos de formación profesional.</p>
+<div class="panel-group" id="accordion1">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" data-target="#direcp1">
+          <b>Directora Programa</b>
+        </a>
+      </h4>
+    </div>
+    <div id="direcp1" class="panel-collapse collapse out">
+      <div class="panel-body">
+       <p>Natalia Parra Roman</p>
+        <p>Extensión:  1383</p>
+        <p><a href="mailto:ingenieria.sistemas@unbosque.edu.co">
+ingenieria.sistemas@unbosque.edu.co</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" data-target="#secred1">
+          <b>Secretaria Direccion</b>
+        </a>
+      </h4>
+    </div>
+    <div id="secred1" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Socorro Esperanza Zuñiga Lopez</p>
+        <p>Extensión:  1280</p>
+        <p>Teléfono directo:  5204018</p>
+        <p><a href="mailto:ingenieria.sistemas@unbosque.edu.co">
+ingenieria.sistemas@unbosque.edu.co</a></p>
+      </div>
+    </div>
+  </div>
+      <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion1" data-target="#secrea1">
+          <b>Secretario Academico</b>
+        </a>
+      </h4>
+    </div>
+    <div id="secrea1" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Leon Jairo Heredia Muñoz</p>
+        <p>Extensión:  1391</p>
+        <p><a href="mailto:secretaria.sistemas@unbsoque.edu.co">
+secretaria.sistemas@unbsoque.edu.co</a></p>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
 </div>
     
@@ -279,18 +290,67 @@
     <!-- Creditos -->
     <div id="creditos" class="creditos">
     <center><h2>Creditos</h2></center>
+<center><button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#desarrolladores"><b>Desarrolladores</b></button></center> <div id="desarrolladores" class="collapse out">
         
-        <center><button type="button" class="btn btn-primary btn-sm" data-toggle="collapse" data-target="#d1"><b>Desarrolladores</b></button></center> <div id="d1" class="collapse out"><center><p><b>Jesus Henriquez</b></p>
-                    <p>Twitter: <a href="http://twitter.com/jesushenriquezF" target="_blank"><b>@JesusHenriquezF</b></a>
-        <center><p><b>Daniel Acosta</b></p>
-                    <p>Twitter: <a href="http://twitter.com/Daniel_Acos" target="_blank"><b>@Daniel_Acos</b></a>
-                         <center><p><b>Fernando Pinilla</b></p>
-                    <p>Twitter: <a href="http://twitter.com/djfercho196" target="_blank"><b>@DjFercho196</b></a>
-                         <center><p><b>Jose Mieles</b></p>
-                    <p>Twitter: <a href="http://twitter.com/Josemieles2" target="_blank"><b>@JoseMieles2</b></a>
-        </div></p>
-                    </center>
-                    </div></center>
+<div class="panel-group" id="d">
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#d" data-target="#d1">
+          <b>Jesus Henriquez</b>
+        </a>
+      </h4>
+    </div>
+    <div id="d1" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Twitter: <a href="http://twitter.com/jesushenriquezF" target="_blank"><b>@JesusHenriquezF</b></a></p>
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#d" data-target="#d2">
+          <b>Daniel Acosta</b>
+        </a>
+      </h4>
+    </div>
+    <div id="d2" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Twitter: <a href="http://twitter.com/Daniel_Acos" target="_blank"><b>@Daniel_Acos</b></a></p>
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#d" data-target="#d3">
+          <b>Fernando Pinilla</b>
+        </a>
+      </h4>
+    </div>
+    <div id="d3" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Twitter: <a href="http://twitter.com/djfercho196" target="_blank"><b>@DjFercho196</b></a></p>
+      </div>
+    </div>
+  </div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#d" data-target="#d4">
+          <b>Jose Mieles</b>
+        </a>
+      </h4>
+    </div>
+    <div id="d4" class="panel-collapse collapse out">
+      <div class="panel-body">
+        <p>Twitter: <a href="http://twitter.com/Josemieles2" target="_blank"><b>@JoseMieles2</b></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+                    </div>
         <p> </p>
     </div>
     <!-- /Creditos -->
@@ -319,7 +379,9 @@
     <!-- JavaScript -->
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/bootstrap.js"></script>
+        <script src"js/bootstrap.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="accordion.js"></script>
     <script type="application/javascript" src="js/fastclick.js"></script>
     
         <script>$('.m-carousel').carousel()</script>
@@ -355,6 +417,9 @@
         });
     });
     </script>
+        <script>
+    </script>
+        
 </body>
 
 </html>
